@@ -36,17 +36,207 @@ The contract code can be found [here](https://github.com/nftprotect/nftprotect-c
 
 ### Functions
 
-#### askOwnershipRestoreArbitrate
+**setFee**
 
-{% code overflow="wrap" fullWidth="true" %}
+{% code overflow="wrap" %}
+```solidity
+setFee(Security level, uint256 fw)
+```
+{% endcode %}
+
+This function allows the contract owner to set the fee associated with a given security level. The fee is required for certain operations within the contract.
+
+**setArbitratorRegistry**
+
+{% code overflow="wrap" %}
+```solidity
+setArbitratorRegistry(address areg)
+```
+{% endcode %}
+
+This function allows the contract owner to set the address of the arbitrator registry. The arbitrator registry is a contract that manages arbitrators who make decisions in disputes.
+
+**setUserRegistry**
+
+{% code overflow="wrap" %}
+```solidity
+setUserRegistry(address ureg)
+```
+{% endcode %}
+
+This function allows the contract owner to set the address of the user registry. The user registry is a contract that manages the users of the system.
+
+**setBurnOnAction**
+
+{% code overflow="wrap" %}
+```solidity
+setBurnOnAction(bool boa)
+```
+{% endcode %}
+
+This function allows the contract owner to set whether protected tokens should be burned when an action is taken. If set to true, the protected tokens will be destroyed, effectively reducing the total supply of tokens.
+
+**setBase**
+
+{% code overflow="wrap" %}
+```solidity
+setBase(string memory b)
+```
+{% endcode %}
+
+This function allows the contract owner to set the base URI for all token metadata. The base URI is prepended to the token-specific identifiers to generate the full URI for each token.
+
+**setScoreThreshold**
+
+{% code overflow="wrap" %}
+```solidity
+setScoreThreshold(uint256 threshold)
+```
+{% endcode %}
+
+This function allows the contract owner to set the threshold for user scores. This score threshold may be used in various operations within the contract, for example, to determine if a user can perform certain actions.
+
+**setMetaEvidenceLoader**
+
+{% code overflow="wrap" %}
+```solidity
+setMetaEvidenceLoader(address mel)
+```
+{% endcode %}
+
+This function allows the contract owner to set the address of the meta evidence loader. The meta evidence loader is a contract that manages the submission of meta evidence.
+
+**onERC721Received**
+
+{% code overflow="wrap" %}
+```solidity
+onERC721Received(address /*operator*/, address /*from*/, uint256 /*tokenId*/, bytes calldata /*data*/)
+```
+{% endcode %}
+
+This function is a standard interface for handling incoming ERC721 tokens. It's called by an ERC721 smart contract when a token is transferred to this contract.
+
+**onERC1155Received**
+
+{% code overflow="wrap" %}
+```solidity
+onERC1155Received(address /*operator*/, address /*from*/, uint256 /*id*/, uint256 /*value*/, bytes calldata /*data*/)
+```
+{% endcode %}
+
+This function is a standard interface for handling incoming ERC1155 tokens. It's called by an ERC1155 smart contract when a token is transferred to this contract.
+
+**onERC1155BatchReceived**
+
+{% code overflow="wrap" %}
+```solidity
+onERC1155BatchReceived(address /*operator*/, address /*from*/, uint256[] calldata /*ids*/, uint256[] calldata /*values*/, bytes calldata /*data*/)
+```
+{% endcode %}
+
+This function is a standard interface for handling incoming batches of ERC1155 tokens. It's called by an ERC1155 smart contract when multiple tokens are transferred to this contract at once.
+
+**tokenURI**
+
+{% code overflow="wrap" %}
+```solidity
+tokenURI(uint256 tokenId)
+```
+{% endcode %}
+
+This function returns the full URI for the metadata associated with the token specified by `tokenId`. It's part of the standard interface for ERC721 tokens and is used to provide information about the token.
+
+**originalOwnerOf**
+
+{% code overflow="wrap" %}
+```solidity
+originalOwnerOf(uint256 tokenId)
+```
+{% endcode %}
+
+This function is used to determine the original owner of the token specified by `tokenId`. This information can be used to track the provenance of tokens.
+
+**isOriginalOwner**
+
+{% code overflow="wrap" %}
+```solidity
+isOriginalOwner(uint256 tokenId, address candidate)
+```
+{% endcode %}
+
+This function checks whether the given address is the original owner of the token with the specified `tokenId`. This can be useful in functions that need to validate the original owner.
+
+**protect**
+
+{% code overflow="wrap" %}
+```solidity
+protect(Standard std, address contr, uint256 tokenId, uint256 amount, Security level, address payable referrer)
+```
+{% endcode %}
+
+This function allows a user to protect their token by transferring it to this contract. In return, the contract mints a protected token that represents the original token. The protected token can be transferred or sold independently of the original token.
+
+**burn**
+
+{% code overflow="wrap" %}
+```solidity
+burn(uint256 tokenId, address dst, uint256 arbitratorId, string memory evidence)
+```
+{% endcode %}
+
+This function allows a user to burn their protected token and return the original token to the owner. If the token's security level is not Basic, a dispute is created and the evidence is passed to the arbitrator for resolution.
+
+**adjustOwnership**
+
+{% code overflow="wrap" %}
+```solidity
+adjustOwnership(uint256 tokenId, uint256 arbitratorId, string memory evidence)
+```
+{% endcode %}
+
+This function allows a user to adjust the ownership of the original token to the current owner of the protected token. If the token's security level is not Basic, a dispute is created and the evidence is passed to the arbitrator for resolution.
+
+**askOwnershipAdjustment**
+
+{% code overflow="wrap" %}
+```solidity
+askOwnershipAdjustment(uint256 tokenId, address dst, uint256 arbitratorId)
+```
+{% endcode %}
+
+This function allows a user to create a request for ownership adjustment. This can be useful if the ownership of the original token has become inconsistent with the ownership of the protected token.
+
+**answerOwnershipAdjustment**
+
+{% code overflow="wrap" %}
+```solidity
+answerOwnershipAdjustment(uint256 requestId, bool accept, string memory evidence)
+```
+{% endcode %}
+
+This function allows the owner of the original token to confirm or reject a proposed ownership adjustment. The owner can provide evidence to support their decision.
+
+**askOwnershipAdjustmentArbitrate**
+
+{% code overflow="wrap" %}
+```solidity
+askOwnershipAdjustmentArbitrate(uint256 requestId, string memory evidence)
+```
+{% endcode %}
+
+This function allows a user to escalate an unresolved ownership adjustment request to an external arbitrator. The user can provide additional evidence to support their case.
+
+**askOwnershipRestoreArbitrate**
+
+{% code overflow="wrap" %}
 ```solidity
 askOwnershipRestoreArbitrate(uint256 tokenId, address dst, uint256 arbitratorId, MetaEvidenceType metaEvidenceType, string memory evidence)
 ```
 {% endcode %}
 
-This function is called by the owner of the original token if they have lost access to the protected token or it was stolen. It creates a dispute on an external ERC-792 compatible arbitrator.
+This function allows the original owner of a token to open a dispute if they have lost access to their protected token. The dispute is passed to an ERC-792 compatible external arbitrator for resolution.
 
-#### submitMetaEvidence
+**submitMetaEvidence**
 
 {% code overflow="wrap" %}
 ```solidity
@@ -54,47 +244,17 @@ submitMetaEvidence(MetaEvidenceType evidenceType, string memory evidence)
 ```
 {% endcode %}
 
-This function allows the `metaEvidenceLoader` to submit meta evidence.
+This function allows the meta evidence loader to submit meta evidence of a certain type. The evidence can be used in disputes to provide additional context or information.
 
-#### fetchRuling
-
-{% code overflow="wrap" %}
-```solidity
-fetchRuling(uint256 requestId)
-```
-{% endcode %}
-
-Fetches the ruling that is stored in the arbitrable proxy.
-
-#### \_isApprovedOrOwner
+**rescueERC20**
 
 {% code overflow="wrap" %}
 ```solidity
-_isApprovedOrOwner(address spender, uint256 tokenId)
+rescueERC20(address erc20, uint256 amount, address receiver)
 ```
 {% endcode %}
 
-Checks if the given address is an approved spender or the owner of the token.
-
-#### \_beforeTokenTransfer
-
-{% code overflow="wrap" %}
-```solidity
-_beforeTokenTransfer(address from, address to, uint256 tokenId, uint256 batchSize)
-```
-{% endcode %}
-
-Runs checks before a token transfer.
-
-#### rescueERC20
-
-{% code overflow="wrap" %}
-```solidity
-rescueERC20(address erc20, uint256 amount, address receiver)ol
-```
-{% endcode %}
-
-This function allows the contract owner to rescue any ERC20 tokens sent to the contract by mistake.
+This function allows the contract owner to transfer a specified amount of any ERC20 token that has become stuck in the contract to a specified receiver.
 
 ### Structs
 

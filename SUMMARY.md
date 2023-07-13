@@ -24,6 +24,7 @@
   * [User Registry](protocol/smart-contracts/user-registry.md)
   * [Arbitrator Registry](protocol/smart-contracts/arbitrator-registry.md)
   * [NFTP Coupons](protocol/smart-contracts/nftp-coupons.md)
+  * [Deployment Addresses](protocol/smart-contracts/deployment-addresses.md)
 
 ## 🗺 Other
 

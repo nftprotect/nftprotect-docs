@@ -73,11 +73,3 @@ burnFrom(address account, uint256 amount)
 ```
 
 This function allows the NFT Protect contract to burn tokens from a specified account.
-
-#### \_beforeTokenTransfer
-
-```solidity
-_beforeTokenTransfer(address from, address to, uint256 amount)
-```
-
-This function is an internal function that checks whether tokens can be transferred before any transfer of tokens occurs. If the `transferrable` state of the contract is false, it only allows transfers where either the `from` address or the `to` address is the zero address (i.e., minting and burning of tokens).

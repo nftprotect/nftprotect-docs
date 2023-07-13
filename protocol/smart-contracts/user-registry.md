@@ -44,11 +44,11 @@ The contract defines a `SuccessorRequest` struct to store information about a re
 
 ### Functions
 
-#### onstructor
+#### constructor
 
 {% code overflow="wrap" %}
 ```solidity
-onstructor(address areg, IUserDID did, address nftprotectaddr)
+constructor(address areg, IUserDID did, address nftprotectaddr)
 ```
 {% endcode %}
 
