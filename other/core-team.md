@@ -21,4 +21,4 @@ Technological IT entrepreneur, in business for more than 20 years, programmer, b
 ](http://linkedin.com/in/lena-kotlyar)Ten years of experience as an art director. For seven years, managed the department for the release of interactive versions of Men's Health and Women's Health magazines at the largest Russian publishing house Sanoma Independent Media.
 
 **Natalia Grazhdankina** 🇹🇭 | [Linkedin\
-](https://www.linkedin.com/in/grazhdankinanatalia/)More than 10 years of experience as a digital marketing manager in the IT company. Packaging, promotion of services/ solutions/ events and creation of company websites.\\
+](https://www.linkedin.com/in/grazhdankinanatalia/)More than 10 years of experience as a digital marketing manager in the IT company. Packaging, promotion of services/ solutions/ events and creation of company websites.
