@@ -7,7 +7,7 @@
 * Finished Jury Policies&#x20;
 * Written Whitepaper
 
-### Phase 2
+## Phase 2
 
 * Smart-contract 2.0&#x20;
 * Polygon Mainnet Release
