@@ -35,5 +35,3 @@ While an accidental transfer to an incorrect address is not a malicious attack, 
 Private keys are crucial for accessing digital wallets, and their loss can result in not just asset loss but also loss of access to the wallet. NFT Protect offers a feature to adjust the ownership of a digital asset to a designated successor in the event of private key loss or other incapacitations. This feature ensures that users' digital assets will not be permanently lost in case of an unfortunate event.
 
 For more information on how we prevent friendly fraud, please refer to our [FAQ ](../other/faq.md)section.
-
-\\
