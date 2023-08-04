@@ -50,6 +50,14 @@ No, NFT Protect does not have access to users' NFTs or pNFTs. The protocol only 
 
 NFT Protect requires only internet access, a web browser, and a wallet to use. We have an intuitive application with comments accompanying every step, making it easy to use for those without specialized knowledge.
 
+### How do I tell the difference between pNFT and NFT, and how do I know what I'm buying on the marketplace? &#x20;
+
+pNFTs are distinguished from originals by containing additional description, including a link to the application and the ability to request a transfer of ownership rights.&#x20;
+
+You can verify that you have a pNFT in your wallet using the NFT Protect Validator or a blockchain explorer. Also, if the marketplace supports proper display of the pNFT format, you will see the specific ‘protected’ icon in the marketplace interface.
+
+If you are still uncertain, you can open [NFT Protect Dapp](https://dev.nftprotect.app/) and see the type of NFT.
+
 ### I have purchased pNFT. What should I do next?
 
 After purchasing a pNFT, you can request the original NFT through our protocol if the seller forgets to transfer it to you. To do so, you need to log in to our application using your crypto wallet. All of your purchased protected assets will be displayed in the “All your protected assets” section. There, you will find a button labeled "Request Original." Pressing the button will send a request to the original owner to transfer the rights to you.
