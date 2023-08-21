@@ -1,6 +1,7 @@
 ---
 cover: .gitbook/assets/1100x240.png
 coverY: 0
+layout: landing
 ---
 
 # Abstract
