@@ -29,9 +29,12 @@
 ## 🗺 Other
 
 * [Roadmap](other/roadmap.md)
-* [Core Team](other/core-team.md)
 * [FAQ](other/faq.md)
 
 ## 🎓 Legal
 
 * [Privacy Policy](legal/privacy-policy.md)
+
+## 🦮 Guides
+
+* [Testnet Guidelines](guides/testnet-guidelines.md)
