@@ -1,7 +1,20 @@
 ---
 cover: .gitbook/assets/1100x240.png
 coverY: 0
-layout: landing
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: false
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Abstract
