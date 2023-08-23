@@ -60,7 +60,7 @@ The application is launched on the Goerli and Sepolia testnets. You'll need NFTs
 
 Select any NFT and protect it by clicking the **“Protect NFT”** button.
 
-<figure><img src="../.gitbook/assets/Protect.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Protect.png" alt="" width="188"><figcaption></figcaption></figure>
 
 ### **Steps to Protect:**
 
@@ -80,7 +80,7 @@ Remember, you can sell your pNFT on marketplaces, transfer it, or use it in supp
 
 At any time, you can restore your original NFT. In doing so, the pNFT will be burned, and the original NFT will be retrieved from the vault.
 
-<figure><img src="../.gitbook/assets/Restore.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Restore.png" alt="" width="188"><figcaption></figcaption></figure>
 
 ### **Steps to Restore:**
 
@@ -97,7 +97,7 @@ After selling or transferring the pNFT to a new owner, you can securely transfer
 2. Find the pNFT, and&#x20;
 3. Click on the "**Transfer original**" button.
 
-<figure><img src="../.gitbook/assets/Open dispute.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Open dispute.png" alt="" width="188"><figcaption></figcaption></figure>
 
 4. Confirm your intention in the pop-up window, and then confirm and pay for the transaction in your wallet.
 
@@ -111,7 +111,7 @@ If you've acquired a Protected NFT and the original NFT owner hasn't subsequentl
 2. Click on the "Request original" button.&#x20;
 3. Confirm and pay for the transaction in your wallet.
 
-<figure><img src="../.gitbook/assets/Request.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Request.png" alt="" width="188"><figcaption></figcaption></figure>
 
 ### **Response Time:**
 
