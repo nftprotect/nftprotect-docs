@@ -38,7 +38,7 @@ The application is launched on the Goerli and Sepolia testnets. You'll need NFTs
 
 ### **Resources to Assist You:**
 
-* **Goerli Faucet**: [https://goerlifaucet.com](https://goerlifaucet.com/) (0.2 test ETH per day)
+* **Goerli Faucet**: [https://faucetlink.to/goerli](https://faucetlink.to/goerli)&#x20;
 * **Sepolia Faucets**: [https://faucetlink.to/sepolia](https://faucetlink.to/sepolia)
 * **Purchase Goerli NFTs on**:
   * [https://www.testnetmint.com](https://www.testnetmint.com/)
