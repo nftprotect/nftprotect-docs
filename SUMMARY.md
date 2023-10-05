@@ -38,3 +38,4 @@
 ## 🦮 Guides
 
 * [Testnet Guidelines](guides/testnet-guidelines.md)
+* [Coupons Guide](guides/coupons-guide.md)
