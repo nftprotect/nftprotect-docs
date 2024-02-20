@@ -2,6 +2,10 @@
 
 ## Testnet
 
+{% hint style="danger" %}
+_<mark style="color:red;">The support for the Goerli test network has been discontinued after December 31, 2023. Please use Sepolia network instead.</mark>_
+{% endhint %}
+
 ### Goerli
 
 |                            |                                                                                                                                   |
