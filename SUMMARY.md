@@ -7,7 +7,7 @@
 * [Glossary](introduction/glossary.md)
 * [The Problem](introduction/the-problem.md)
 
-## 🎛 Protocol
+## 🎛️ Protocol
 
 * [What is NFT Protect?](protocol/what-is-nft-protect.md)
 * [Key Concepts](protocol/key-concepts/README.md)
@@ -26,7 +26,7 @@
   * [NFTP Coupons](protocol/smart-contracts/nftp-coupons.md)
   * [Deployment Addresses](protocol/smart-contracts/deployment-addresses.md)
 
-## 🗺 Other
+## 🗺️ Other
 
 * [Roadmap](other/roadmap.md)
 * [FAQ](other/faq.md)
